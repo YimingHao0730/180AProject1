@@ -20,7 +20,7 @@ def Prediction_LSTM():
 
 def Prediction_Bert():
     if not os.path.exists(r"results\outcome_Bert.txt"):
-        os.system(r'python scripts\prediction_bert.py processed_data\processed_data.txt  results\outcome_Bert.txt')
+        os.system(r'python scripts\prediction_bert.py processed_data\combined.txt  results\outcome_Bert.txt')
     print("Prediction with Bert model complete")
 
 def Result_integration():

@@ -10,7 +10,7 @@ if __name__ == '__main__':
     import numpy as np
     import pandas as pd
 
-    model = load_model("C:/Users/haoyi/Desktop/c_AMPs-prediction/Models/bert.bin")
+    model = load_model("Models/bert.bin")
 
     tmp = pd.read_csv(seq_path, sep="\t", header=None, names=["seq"], index_col=False).seq.values
     seq_array = []

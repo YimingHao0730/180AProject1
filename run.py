@@ -4,7 +4,7 @@ import os
 
 def data_processing():
     if not os.path.exists('processed_data/combined.txt'):
-        os.system('type Data/AMPs.fa Data/Non-AMPs.fa > processed_data/combined.txt')
+        os.system('cat Data/AMPs.fa Data/Non-AMPs.fa > processed_data/combined.txt')
         os.system('perl scripts/format.pl processed_data/combined.txt none > processed_data/processed_data.txt')
     print("Data processing done")
 

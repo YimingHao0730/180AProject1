@@ -1,6 +1,14 @@
 # -*- coding:utf-8 -*-
 
 ## usage python prediction_lstm.py sequence_after_format.txt lstm_bact.txt
+import tensorflow as tf
+
+# Check if TensorFlow has access to GPU
+if tf.test.gpu_device_name():
+    print('Default GPU Device: {}'.format(tf.test.gpu_device_name()))
+else:
+    print("GPU device not found, using CPU instead.")
+
 from keras.models import load_model
 from numpy import loadtxt, savetxt
 from sys import argv

@@ -15,7 +15,7 @@ Welcome to our project focused on identifying Antimicrobial Peptides (AMPs) from
 ## Running the project
 
 ### Initlize environment
-To create the environment, run the following command from the root directory of the project.
+To create the environment, run the following command from the `root directory of the project`.
 ```bash
 python -m venv amp_prediction
 source amp_prediction/bin/activate
@@ -24,21 +24,26 @@ source amp_prediction/bin/activate
 Right now you should have a folder called __amp_prediction__ in your root directory of the project
 
 ### Installation of dependencies
-To install dependencies, run the following command from the root directory of the project
+To install dependencies, run the following command from the `root directory of the project`
 ```bash
 pip install -r requirements.txt
 ```
 ### Installation bert_sklearn
 
-copy the __bert_sklearn__ folder to __amp_prediction__/lib/python3.9/site-packages folder, and then run the following command from the bert_sklearn folder you just moved
+copy the __bert_sklearn__ folder to __amp_prediction__/lib/python3.9/site-packages folder, and then run the following command from `root directory of the project`
 ```bash
+cd amp_prediction/lib/python3.9/site-packages/bert_sklearn
 pip install .
 ```
 
 ### Building the project stages using `run.py`
 
-* To process the data, from the project root dir, run `python run.py data`
+* To process the data, from the `project root dir`, run `python run.py data`
   - This combines the amp and non-amp data and saves the processed data in processed_data folder.
 * To do prediction and evaluate the performance of the models, from the project root dir, run `python run.py prediction`
   - This loads the processed data into three individual models (Attention, LSTM and Bert) and completes the prediction. Save the results and integrates them, and outputs the model's performance statistic as a html page in the project root dir.
 * Use `python run.py all` to complete all steps above
+
+## Reference
+
+Models, bert-sklearn and part of the scripts are provided by [Identification of antimicrobial peptides from the human gut microbiome using deep learning](https://www.nature.com/articles/s41587-022-01226-0)

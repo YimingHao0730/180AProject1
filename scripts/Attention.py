@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*-
+# modified from https://github.com/mayuefine/c_AMPs-prediction/tree/master
 from keras import backend as K
 from keras.layers import Layer
 from keras import initializers, regularizers, constraints

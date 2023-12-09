@@ -1,5 +1,5 @@
 # -*- coding:utf-8 -*-
-
+# modified from https://github.com/mayuefine/c_AMPs-prediction/tree/master
 ## usage python prediction_lstm.py sequence_after_format.txt lstm_bact.txt
 import tensorflow as tf
 

@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# modified from https://github.com/mayuefine/c_AMPs-prediction/tree/master
 
 import sys
 import pandas as pd

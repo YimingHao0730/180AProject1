@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*-
+# modified from https://github.com/mayuefine/c_AMPs-prediction/tree/master
 
 ## usage python prediction_attention.py bact.txt att_bact.txt
 import tensorflow as tf

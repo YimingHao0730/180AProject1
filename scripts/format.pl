@@ -1,4 +1,5 @@
 #!/usr/bin/perl -w
+# modified from https://github.com/mayuefine/c_AMPs-prediction/tree/master
    use strict;
 
    my $in = $ARGV[0];

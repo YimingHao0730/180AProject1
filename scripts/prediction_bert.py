@@ -1,3 +1,4 @@
+# modified from https://github.com/mayuefine/c_AMPs-prediction/tree/master
 if __name__ == '__main__':
     from os import environ
     from sys import argv

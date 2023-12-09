@@ -43,7 +43,7 @@ pip install .
 * To do prediction and evaluate the performance of the models, from the project root dir, run `python run.py prediction`
   - This loads the processed data into three individual models (Attention, LSTM and Bert) and completes the prediction. Save the results and integrates them, and outputs the model's performance statistic as a html page in the project root dir.
 * Use `python run.py all` to complete all steps above
-
+* This step takes `10-15` minutes
 ## Reference
 
 Models, bert-sklearn and part of the scripts are provided by [Identification of antimicrobial peptides from the human gut microbiome using deep learning](https://www.nature.com/articles/s41587-022-01226-0)
